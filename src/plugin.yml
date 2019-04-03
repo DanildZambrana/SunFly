@@ -1,0 +1,15 @@
+main: com.github.entropy1986.sunfly.Main
+author: Entropy1986
+name: Sunfly
+version: 1.0
+description: Fly plugin, Easy and simple. fly by worlds.
+
+commands:
+  fly:
+    description: fly command
+    aliases: [volar]
+    usage: /<command> NickName
+  flyreload:
+    description: fly reload command
+    aliases: [fr, freload, fre]
+    usage: /<command> NickName

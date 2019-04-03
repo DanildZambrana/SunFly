@@ -1,0 +1,7 @@
+# Nombre del archivo que contiene los mensajes.
+Lang: "messages_en.yml"
+
+# Nombre de los mundos permitidos.
+Worlds:
+  - exampleWorld
+  - exampleWorld

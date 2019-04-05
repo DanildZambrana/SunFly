@@ -32,6 +32,9 @@ public class SpawnWorld implements Listener {
     List<String> worlds = config.getStringList("Worlds");
 
     if(!(worlds.contains(world))){
+      if (p.hasPermission("fly.bypass")){
+        return;
+      }
       if (ItsFly.active(main, p)) {
         p.setAllowFlight(false);
         p.setFlying(false);

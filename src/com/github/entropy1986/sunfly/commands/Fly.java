@@ -36,10 +36,10 @@ public class Fly implements CommandExecutor {
 
       List<String> worlds = config.getStringList("Worlds");
       if(args.length == 0) {
-        if (p.isOp() || p.hasPermission("*") || p.hasPermission("fly.use")) {
+        if (p.hasPermission("fly.use")) {
           Location loc = p.getLocation();
           String world = loc.getWorld().getName();
-          if (worlds.contains(world)) {
+          if (worlds.contains(world) || p.hasPermission("fly.bypass")) {
             if (!ItsFly.active(main, p)) {
               p.sendMessage(Color.toColor(messages.getString("FlyEnabled").replace("%prefix%", lang.getFile().getString("Prefix"))));
               p.setAllowFlight(true);
